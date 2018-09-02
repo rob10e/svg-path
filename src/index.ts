@@ -1,1 +1,1 @@
-export * from './lib/builder';
+export { default } from './lib/builder';
