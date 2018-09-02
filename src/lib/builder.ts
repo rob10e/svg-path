@@ -21,7 +21,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.moveTo(10, 10).close();
    * // => 'M 10 10 z'
@@ -29,7 +29,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.moveTo(10, 10).close();
    * // => 'M 10 10 z'
@@ -51,7 +51,7 @@ export default class Builder {
    * If your cursor already was somewhere on the page, no line is drawn to connect
    * the two places.<br/>
    *
-   * This uses absolute positioning.
+   * This uses relative positioning.
    *
    * For absolute positioning, see:
    * [moveTo()](#moveto)
@@ -60,7 +60,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.moveToRel(10, 10).close();
    * // => 'm 10 10 z'
@@ -68,7 +68,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.moveToRel(10, 10).close();
    * // => 'm 10 10 z'
@@ -97,7 +97,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.lineTo(10, 10).close();
    * // => 'L 10 10 z'
@@ -105,7 +105,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.lineTo(10, 10).close();
    * // => 'L 10 10 z'
@@ -134,7 +134,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.lineToRel(10, 10).close();
    * // => 'l 10 10 z'
@@ -142,7 +142,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.lineToRel(10, 10).close();
    * // => 'l 10 10 z'
@@ -171,7 +171,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.horizontalTo(10).close();
    * // => 'H 10 z'
@@ -179,7 +179,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.horizontalTo(10).close();
    * // => 'H 10 z'
@@ -207,7 +207,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.horizontalToRel(10).close();
    * // => 'h 10 z'
@@ -215,7 +215,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.horizontalToRel(10).close();
    * // => 'h 10 z'
@@ -243,7 +243,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.verticalTo(10).close();
    * // => 'V 10 z'
@@ -251,7 +251,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.verticalTo(10).close();
    * // => 'V 10 z'
@@ -279,7 +279,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.verticalToRel(10).close();
    * // => 'v 10 z'
@@ -287,7 +287,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.verticalToRel(10).close();
    * // => 'v 10 z'
@@ -321,18 +321,18 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.cubicTo(10, 10, 10, 10, 10, 10).close();
-   * // => 'C 10 10, 10 10, 10 10 z'
+   * // => 'C 10 10 10 10 10 10 z'
    * ```
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.cubicTo(10, 10, 10, 10, 10, 10).close();
-   * // => 'C 10 10, 10 10, 10 10 z'
+   * // => 'C 10 10 10 10 10 10 z'
    * ```
    *
    * @param {number} x1 x1 coordinate of the start control point
@@ -352,7 +352,7 @@ export default class Builder {
     x: number,
     y: number
   ): Builder {
-    this.ammend(`C ${x1} ${y1}, ${x2} ${y2}, ${x} ${y}`);
+    this.ammend(`C ${x1} ${y1} ${x2} ${y2} ${x} ${y}`);
     return this;
   }
 
@@ -375,18 +375,18 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.cubicToRel(10, 10, 10, 10, 10, 10).close();
-   * // => 'c 10 10, 10 10, 10 10 z'
+   * // => 'c 10 10 10 10 10 10 z'
    * ```
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.cubicToRel(10, 10, 10, 10, 10, 10).close();
-   * // => 'c 10 10, 10 10, 10 10 z'
+   * // => 'c 10 10 10 10 10 10 z'
    * ```
    *
    * @param {number} x1 x1 coordinate of the start control point
@@ -406,7 +406,7 @@ export default class Builder {
     x: number,
     y: number
   ): Builder {
-    this.ammend(`c ${x1} ${y1}, ${x2} ${y2}, ${x} ${y}`);
+    this.ammend(`c ${x1} ${y1} ${x2} ${y2} ${x} ${y}`);
     return this;
   }
 
@@ -426,18 +426,18 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.smoothTo(10, 10, 10, 10).close();
-   * // => 'S 10 10, 10 10 z'
+   * // => 'S 10 10 10 10 z'
    * ```
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.smoothTo(10, 10, 10, 10).close();
-   * // => 'S 10 10, 10 10 z'
+   * // => 'S 10 10 10 10 z'
    * ```
    *
    * @param {number} x2 x2 coordinate of the end control point
@@ -448,7 +448,7 @@ export default class Builder {
    * @memberof Builder
    */
   public smoothTo(x2: number, y2: number, x: number, y: number): Builder {
-    this.ammend(`S ${x2} ${y2}, ${x} ${y}`);
+    this.ammend(`S ${x2} ${y2} ${x} ${y}`);
     return this;
   }
 
@@ -468,18 +468,18 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.smoothToRel(10, 10, 10, 10).close();
-   * // => 's 10 10, 10 10 z'
+   * // => 's 10 10 10 10 z'
    * ```
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.smoothToRel(10, 10, 10, 10).close();
-   * // => 's 10 10, 10 10 z'
+   * // => 's 10 10 10 10 z'
    * ```
    *
    * @param {number} x2 x2 coordinate of the end control point
@@ -490,7 +490,7 @@ export default class Builder {
    * @memberof Builder
    */
   public smoothToRel(x2: number, y2: number, x: number, y: number): Builder {
-    this.ammend(`s ${x2} ${y2}, ${x} ${y}`);
+    this.ammend(`s ${x2} ${y2} ${x} ${y}`);
     return this;
   }
 
@@ -509,7 +509,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.quadTo(10, 10, 10, 10).close();
    * // => 'Q 10 10 10 10 z'
@@ -517,7 +517,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.quadTo(10, 10, 10, 10).close();
    * // => 'Q 10 10 10 10 z'
@@ -550,7 +550,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.quadToRel(10, 10, 10, 10).close();
    * // => 'q 10 10 10 10 z'
@@ -558,7 +558,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.quadToRel(10, 10, 10, 10).close();
    * // => 'q 10 10 10 10 z'
@@ -595,7 +595,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.quadStringTo(180, 80).close();
    * // => 'T 180 80 z'
@@ -603,7 +603,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.quadStringTo(180, 80).close();
    * // => 'T 180 80 z'
@@ -638,7 +638,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.quadStringToRel(180, 80).close();
    * // => 't 180 80 z'
@@ -646,7 +646,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.quadStringToRel(180, 80).close();
    * // => 't 180 80 z'
@@ -688,7 +688,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.arcTo(30, 50, 0, false, true, 165.55, 162.45).close();
    * // => 'A 30 50 0 0 1 165.55 162.45 z'
@@ -696,7 +696,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.arcTo(30, 50, 0, false, true, 165.55, 162.45).close();
    * // => 'A 30 50 0 0 1 165.55 162.45 z'
@@ -757,7 +757,7 @@ export default class Builder {
    *
    * ### Example (es imports)
    * ```js
-   * import Builder from 'svg-builder'
+   * import Builder from 'svg-builder-js'
    * const builder = new Builder();
    * const path = builder.arcToRel(30, 50, 0, false, true, 165.55, 162.45).close();
    * // => 'a 30 50 0 0 1 165.55 162.45 z'
@@ -765,7 +765,7 @@ export default class Builder {
    *
    * ### Example (commonjs)
    * ```js
-   * var Builder = require('svg-builder').Builder;
+   * var Builder = require('svg-builder-js').Builder;
    * const builder = new Builder();
    * const path = builder.arcToRel(30, 50, 0, false, true, 165.55, 162.45).close();
    * // => 'a 30 50 0 0 1 165.55 162.45 z'

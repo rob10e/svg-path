@@ -64,28 +64,28 @@ test('verticalToRel(10, 10) generates "v 10"', t => {
   t.is(path, 'v 10 z');
 });
 
-test('cubicTo(20, 20, 40, 20, 50, 10) generates "C 20 20, 40 20, 50 10"', t => {
+test('cubicTo(20, 20, 40, 20, 50, 10) generates "C 20 20 40 20 50 10"', t => {
   const builder = new Builder();
   const path = builder.cubicTo(20, 20, 40, 20, 50, 10).close();
-  t.is(path, 'C 20 20, 40 20, 50 10 z');
+  t.is(path, 'C 20 20 40 20 50 10 z');
 });
 
-test('cubicToRel(70, 20, 120, 20, 120, 10) generates "c 70 20, 120 20, 120 10"', t => {
+test('cubicToRel(70, 20, 120, 20, 120, 10) generates "c 70 20 120 20 120 10"', t => {
   const builder = new Builder();
   const path = builder.cubicToRel(70, 20, 120, 20, 120, 10).close();
-  t.is(path, 'c 70 20, 120 20, 120 10 z');
+  t.is(path, 'c 70 20 120 20 120 10 z');
 });
 
-test('smoothTo(150, 150, 180, 80) generates "S 150 150, 180 80"', t => {
+test('smoothTo(150, 150, 180, 80) generates "S 150 150 180 80"', t => {
   const builder = new Builder();
   const path = builder.smoothTo(150, 150, 180, 80).close();
-  t.is(path, 'S 150 150, 180 80 z');
+  t.is(path, 'S 150 150 180 80 z');
 });
 
-test('smoothToRel(10, 10, 10, 10) generates "s 150 150, 180 80"', t => {
+test('smoothToRel(150, 150, 180, 80) generates "s 150 150 180 80"', t => {
   const builder = new Builder();
   const path = builder.smoothToRel(150, 150, 180, 80).close();
-  t.is(path, 's 150 150, 180 80 z');
+  t.is(path, 's 150 150 180 80 z');
 });
 
 test('quadTo(95, 10, 180, 80) generates "Q 95 10 180 80"', t => {
