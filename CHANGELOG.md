@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/rob10e/svg-path/compare/v2.0.0...v2.0.1) (2018-09-02)
+
+
+### Bug Fixes
+
+* Fixed typo in docs, removed commas ([da01d25](https://github.com/rob10e/svg-path/commit/da01d25))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/rob10e/svg-path/compare/v1.0.3...v2.0.0) (2018-09-02)
 
