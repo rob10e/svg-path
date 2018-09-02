@@ -21,7 +21,10 @@ test('moveToRel(10, 10) generates "m 10 10"', t => {
 
 test('moveTo(10, 10).moveToRel(10, 10) generates "M 10 10 m 10 10"', t => {
   const builder = new Builder();
-  const path = builder.moveTo(10, 10).moveToRel(10, 10).close();
+  const path = builder
+    .moveTo(10, 10)
+    .moveToRel(10, 10)
+    .close();
   t.is(path, 'M 10 10 m 10 10 z');
 });
 

@@ -661,7 +661,7 @@ export default class Builder {
     this.ammend(`t ${x} ${y}`);
     return this;
   }
-  
+
   /**
    * Arcs are sections of circles or ellipses. For a given x-radius and y-radius,
    * there are two ellipses that can connect any two points (as long as they're within
@@ -714,11 +714,23 @@ export default class Builder {
    * @returns {Builder} an instance of the current builder to chain from
    * @memberof Builder
    */
-  public arcTo(rx: number, ry: number, xAxisRotation: number, largeArc: boolean, sweep: boolean, x: number, y: number): Builder {
-    this.ammend(`A ${rx} ${ry} ${xAxisRotation} ${largeArc ? 1 : 0} ${sweep ? 1 : 0} ${x} ${y}`);
+  public arcTo(
+    rx: number,
+    ry: number,
+    xAxisRotation: number,
+    largeArc: boolean,
+    sweep: boolean,
+    x: number,
+    y: number
+  ): Builder {
+    this.ammend(
+      `A ${rx} ${ry} ${xAxisRotation} ${largeArc ? 1 : 0} ${
+        sweep ? 1 : 0
+      } ${x} ${y}`
+    );
     return this;
   }
-  
+
   /**
    * Arcs are sections of circles or ellipses. For a given x-radius and y-radius,
    * there are two ellipses that can connect any two points (as long as they're within
@@ -771,8 +783,20 @@ export default class Builder {
    * @returns {Builder} an instance of the current builder to chain from
    * @memberof Builder
    */
-  public arcToRel(rx: number, ry: number, xAxisRotation: number, largeArc: boolean, sweep: boolean, x: number, y: number): Builder {
-    this.ammend(`a ${rx} ${ry} ${xAxisRotation} ${largeArc ? 1 : 0} ${sweep ? 1 : 0} ${x} ${y}`);
+  public arcToRel(
+    rx: number,
+    ry: number,
+    xAxisRotation: number,
+    largeArc: boolean,
+    sweep: boolean,
+    x: number,
+    y: number
+  ): Builder {
+    this.ammend(
+      `a ${rx} ${ry} ${xAxisRotation} ${largeArc ? 1 : 0} ${
+        sweep ? 1 : 0
+      } ${x} ${y}`
+    );
     return this;
   }
   /**
