@@ -1,5 +1,4 @@
-![Travis CI](https://travis-ci.com/rob10e/svg-path.svg?branch=master)
-
+![Travis CI](https://travis-ci.com/rob10e/svg-path.svg?branch=master)  [![codecov](https://codecov.io/gh/rob10e/svg-path/branch/master/graph/badge.svg)](https://codecov.io/gh/rob10e/svg-path) [![npm version](https://badge.fury.io/js/%40rob10e%2Fsvg-path-js.svg)](https://badge.fury.io/js/%40rob10e%2Fsvg-path-js) ![](https://david-dm.org/rob10e/svg-path.svg)
 # svg-path-js
 
 A declaritive SVG path builder
