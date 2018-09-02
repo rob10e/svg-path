@@ -112,14 +112,26 @@ test('quadStringToRel(180, 80) generates "t 180 80"', t => {
   t.is(path, 't 180 80 z');
 });
 
-test('arcTo(30, 50, 0, false, true, 165.55, 162.45) generates "A 30 50 0 0 1 162.55 162.45"', t => {
+test('arcTo(30, 50, 0, false, true, 165.55, 162.45) generates "A 30 50 0 0 1 165.55 162.45"', t => {
   const builder = new Builder();
   const path = builder.arcTo(30, 50, 0, false, true, 165.55, 162.45).close();
   t.is(path, 'A 30 50 0 0 1 165.55 162.45 z');
 });
 
-test('arcToRel(30, 50, 0, false, true, 165.55, 162.45) generates "a 30 50 0 0 1 162.55 162.45"', t => {
+test('arcToRel(30, 50, 0, false, true, 165.55, 162.45) generates "a 30 50 0 0 1 165.55 162.45"', t => {
   const builder = new Builder();
   const path = builder.arcToRel(30, 50, 0, false, true, 165.55, 162.45).close();
   t.is(path, 'a 30 50 0 0 1 165.55 162.45 z');
+});
+
+test('arcTo(30, 50, 0, true, false, 165.55, 162.45) generates "A 30 50 0 1 0 165.55 162.45"', t => {
+  const builder = new Builder();
+  const path = builder.arcTo(30, 50, 0, true, false, 165.55, 162.45).close();
+  t.is(path, 'A 30 50 0 1 0 165.55 162.45 z');
+});
+
+test('arcToRel(30, 50, 0, true, false, 165.55, 162.45) generates "a 30 50 0 1 0 165.55 162.45"', t => {
+  const builder = new Builder();
+  const path = builder.arcToRel(30, 50, 0, true, false, 165.55, 162.45).close();
+  t.is(path, 'a 30 50 0 1 0 165.55 162.45 z');
 });
