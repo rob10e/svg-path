@@ -11,7 +11,7 @@ $ npm i svg-path-js
 
 ### Usage
 ```javascript
-import Builder from 'svg-path-builder';
+import Builder from 'svg-path-js';
 
 function renderSvgPath() {
   const builder = new Builder();
