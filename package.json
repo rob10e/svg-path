@@ -1,11 +1,11 @@
 {
   "name": "svg-path",
   "version": "1.0.0",
-  "description": "A declaritive SVG path builder",
+  "description": "A declarative SVG path builder",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/YOUR_GITHUB_USER_NAME/svg-path",
+  "repository": "https://github.com/rob10e/svg-path",
   "license": "MIT",
   "keywords": [],
   "scripts": {
