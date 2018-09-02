@@ -134,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L8">lib/builder.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L8">lib/builder.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,7 +151,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L820">lib/builder.ts:820</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L820">lib/builder.ts:820</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,7 +187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L717">lib/builder.ts:717</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L717">lib/builder.ts:717</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -213,12 +213,12 @@
 								<a href="#arctorel">arcToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Arcs">Arc commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.arcTo(<span class="hljs-number">30</span>, <span class="hljs-number">50</span>, <span class="hljs-number">0</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">true</span>, <span class="hljs-number">165.55</span>, <span class="hljs-number">162.45</span>).close();
 <span class="hljs-comment">// =&gt; 'A 30 50 0 0 1 165.55 162.45 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.arcTo(<span class="hljs-number">30</span>, <span class="hljs-number">50</span>, <span class="hljs-number">0</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">true</span>, <span class="hljs-number">165.55</span>, <span class="hljs-number">162.45</span>).close();
 <span class="hljs-comment">// =&gt; 'A 30 50 0 0 1 165.55 162.45 z'</span></code></pre>
@@ -290,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L786">lib/builder.ts:786</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L786">lib/builder.ts:786</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -316,12 +316,12 @@
 								<a href="#arcto">arcTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Arcs">Arc commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.arcToRel(<span class="hljs-number">30</span>, <span class="hljs-number">50</span>, <span class="hljs-number">0</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">true</span>, <span class="hljs-number">165.55</span>, <span class="hljs-number">162.45</span>).close();
 <span class="hljs-comment">// =&gt; 'a 30 50 0 0 1 165.55 162.45 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.arcToRel(<span class="hljs-number">30</span>, <span class="hljs-number">50</span>, <span class="hljs-number">0</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">true</span>, <span class="hljs-number">165.55</span>, <span class="hljs-number">162.45</span>).close();
 <span class="hljs-comment">// =&gt; 'a 30 50 0 0 1 165.55 162.45 z'</span></code></pre>
@@ -393,7 +393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L808">lib/builder.ts:808</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L808">lib/builder.ts:808</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -421,7 +421,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L347">lib/builder.ts:347</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L347">lib/builder.ts:347</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,15 +440,15 @@
 								<a href="#cubictorel">cubicToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Curve_commands">Curve commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.cubicTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
-<span class="hljs-comment">// =&gt; 'C 10 10, 10 10, 10 10 z'</span></code></pre>
+<span class="hljs-comment">// =&gt; 'C 10 10 10 10 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.cubicTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
-<span class="hljs-comment">// =&gt; 'C 10 10, 10 10, 10 10 z'</span></code></pre>
+<span class="hljs-comment">// =&gt; 'C 10 10 10 10 10 10 z'</span></code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>Builder</p>
@@ -509,7 +509,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L401">lib/builder.ts:401</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L401">lib/builder.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -528,15 +528,15 @@
 								<a href="#cubicto">cubicTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Curve_commands">Curve commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.cubicToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
-<span class="hljs-comment">// =&gt; 'c 10 10, 10 10, 10 10 z'</span></code></pre>
+<span class="hljs-comment">// =&gt; 'c 10 10 10 10 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.cubicToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
-<span class="hljs-comment">// =&gt; 'c 10 10, 10 10, 10 10 z'</span></code></pre>
+<span class="hljs-comment">// =&gt; 'c 10 10 10 10 10 10 z'</span></code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>Builder</p>
@@ -597,7 +597,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L192">lib/builder.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L192">lib/builder.ts:192</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -610,12 +610,12 @@
 								<a href="#horizontaltorel">horizontalToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Line_commands">Line commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.horizontalTo(<span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'H 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.horizontalTo(<span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'H 10 z'</span></code></pre>
@@ -649,7 +649,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L228">lib/builder.ts:228</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L228">lib/builder.ts:228</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -662,12 +662,12 @@
 								<a href="#horizontalto">horizontalTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Line_commands">Line commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.horizontalToRel(<span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'h 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.horizontalToRel(<span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'h 10 z'</span></code></pre>
@@ -701,7 +701,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L119">lib/builder.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L119">lib/builder.ts:119</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -714,12 +714,12 @@
 								<a href="#linetorel">lineToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Line_commands">Line commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.lineTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'L 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.lineTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'L 10 10 z'</span></code></pre>
@@ -759,7 +759,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L156">lib/builder.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L156">lib/builder.ts:156</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -772,12 +772,12 @@
 								<a href="#lineto">lineTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Line_commands">Line commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.lineToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'l 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.lineToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'l 10 10 z'</span></code></pre>
@@ -817,7 +817,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L43">lib/builder.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L43">lib/builder.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -832,12 +832,12 @@
 								<a href="#movetorel">moveToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Line_commands">Line commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.moveTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'M 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.moveTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'M 10 10 z'</span></code></pre>
@@ -877,7 +877,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L82">lib/builder.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L82">lib/builder.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -887,17 +887,17 @@
 										If your cursor already was somewhere on the page, no line is drawn to connect
 									the two places.<br/></p>
 								</div>
-								<p>This uses absolute positioning.</p>
+								<p>This uses relative positioning.</p>
 								<p>For absolute positioning, see:
 								<a href="#moveto">moveTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Line_commands">Line commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.moveToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'm 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.moveToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'm 10 10 z'</span></code></pre>
@@ -937,7 +937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L617">lib/builder.ts:617</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L617">lib/builder.ts:617</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -956,12 +956,12 @@
 								<a href="#quadstringtorel">quadStringToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Curve_commands">Curve commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.quadStringTo(<span class="hljs-number">180</span>, <span class="hljs-number">80</span>).close();
 <span class="hljs-comment">// =&gt; 'T 180 80 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.quadStringTo(<span class="hljs-number">180</span>, <span class="hljs-number">80</span>).close();
 <span class="hljs-comment">// =&gt; 'T 180 80 z'</span></code></pre>
@@ -1001,7 +1001,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L660">lib/builder.ts:660</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L660">lib/builder.ts:660</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1020,12 +1020,12 @@
 								<a href="#quadstringto">quadStringTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Curve_commands">Curve commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.quadStringToRel(<span class="hljs-number">180</span>, <span class="hljs-number">80</span>).close();
 <span class="hljs-comment">// =&gt; 't 180 80 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.quadStringToRel(<span class="hljs-number">180</span>, <span class="hljs-number">80</span>).close();
 <span class="hljs-comment">// =&gt; 't 180 80 z'</span></code></pre>
@@ -1065,7 +1065,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L533">lib/builder.ts:533</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L533">lib/builder.ts:533</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1080,12 +1080,12 @@
 								<a href="#quadtorel">quadToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Curve_commands">Curve commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.quadTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'Q 10 10 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.quadTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'Q 10 10 10 10 z'</span></code></pre>
@@ -1137,7 +1137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L574">lib/builder.ts:574</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L574">lib/builder.ts:574</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1152,12 +1152,12 @@
 								<a href="#quadto">quadTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Curve_commands">Curve commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.quadToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'q 10 10 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.quadToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'q 10 10 10 10 z'</span></code></pre>
@@ -1209,7 +1209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L450">lib/builder.ts:450</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L450">lib/builder.ts:450</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1225,15 +1225,15 @@
 								<a href="#smoothtorel">smoothToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Curve_commands">Curve commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.smoothTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
-<span class="hljs-comment">// =&gt; 'S 10 10, 10 10 z'</span></code></pre>
+<span class="hljs-comment">// =&gt; 'S 10 10 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.smoothTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
-<span class="hljs-comment">// =&gt; 'S 10 10, 10 10 z'</span></code></pre>
+<span class="hljs-comment">// =&gt; 'S 10 10 10 10 z'</span></code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>Builder</p>
@@ -1282,7 +1282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L492">lib/builder.ts:492</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L492">lib/builder.ts:492</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1298,15 +1298,15 @@
 								<a href="#smoothto">smoothTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Curve_commands">Curve commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.smoothToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
-<span class="hljs-comment">// =&gt; 's 10 10, 10 10 z'</span></code></pre>
+<span class="hljs-comment">// =&gt; 's 10 10 10 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.smoothToRel(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>).close();
-<span class="hljs-comment">// =&gt; 's 10 10, 10 10 z'</span></code></pre>
+<span class="hljs-comment">// =&gt; 's 10 10 10 10 z'</span></code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>memberof</dt>
 									<dd><p>Builder</p>
@@ -1355,7 +1355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L264">lib/builder.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L264">lib/builder.ts:264</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1368,12 +1368,12 @@
 								<a href="#verticaltorel">verticalToRel()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Line_commands">Line commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.verticalTo(<span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'V 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.verticalTo(<span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'V 10 z'</span></code></pre>
@@ -1407,7 +1407,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/675680e/src/lib/builder.ts#L300">lib/builder.ts:300</a></li>
+									<li>Defined in <a href="https://github.com/rob10e/svg-path/blob/da01d25/src/lib/builder.ts#L300">lib/builder.ts:300</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1420,12 +1420,12 @@
 								<a href="#verticalto">verticalTo()</a></p>
 								<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#Line_commands#Line_commands">Line commands - MSD web docs</a></p>
 								<h3 id="example-es-imports-">Example (es imports)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder'</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> Builder <span class="hljs-keyword">from</span> <span class="hljs-string">'svg-builder-js'</span>
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.verticalToRel(<span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'v 10 z'</span></code></pre>
 								<h3 id="example-commonjs-">Example (commonjs)</h3>
-								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder'</span>).Builder;
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> Builder = <span class="hljs-built_in">require</span>(<span class="hljs-string">'svg-builder-js'</span>).Builder;
 <span class="hljs-keyword">const</span> builder = <span class="hljs-keyword">new</span> Builder();
 <span class="hljs-keyword">const</span> path = builder.verticalToRel(<span class="hljs-number">10</span>).close();
 <span class="hljs-comment">// =&gt; 'v 10 z'</span></code></pre>
