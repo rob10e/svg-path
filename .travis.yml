@@ -8,7 +8,9 @@ node_js:
   - "node"
 install:
   - npm ci
+  - npm install codecov -g
 script:
   - npm run cov
-
+after_success:
+  - codecov
   
