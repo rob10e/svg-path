@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/rob10e/svg-path/compare/v1.0.3...v2.0.0) (2018-09-02)
+
+
+### Bug Fixes
+
+* Made Builder class the default export ([675680e](https://github.com/rob10e/svg-path/commit/675680e))
+
+
+### BREAKING CHANGES
+
+* None
+
+None
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/rob10e/svg-path/compare/v1.0.2...v1.0.3) (2018-09-02)
 
