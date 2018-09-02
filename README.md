@@ -4,6 +4,7 @@
 
 A declaritive SVG path builder
 
+
 ### Installation
 ```bash
 $ npm i svg-path-js
@@ -11,7 +12,7 @@ $ npm i svg-path-js
 
 ### Usage
 ```javascript
-import PathBuilder from 'svg-path-builder';
+import Builder from 'svg-path-builder';
 
 function renderSvgPath() {
   const builder = new Builder();
@@ -29,6 +30,7 @@ function renderSvgPath() {
 ```
 
 ### API
+[Full API documentation here](https://rob10e.github.io/svg-path/)
 
 #### `new Builder()`
 create an instance of the path builder

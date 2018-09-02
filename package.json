@@ -1,8 +1,8 @@
 {
-  "name": "svg-path-js",
+  "name": "@rob10e/svg-path-js",
   "version": "1.0.2",
   "author": {
-    "name": "Robert Temmey",
+    "name": "Robert Tenney",
     "email": "rob10esf@gmail.com"
   },
   "description": "A declarative SVG path builder",
