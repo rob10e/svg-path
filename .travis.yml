@@ -7,5 +7,7 @@ node_js:
 install:
   - npm ci
 script:
-  - npm run prepare-release
+  - npm test
+  - npm cov
+  
   
