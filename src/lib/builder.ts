@@ -811,6 +811,16 @@ export default class Builder {
   }
 
   /**
+   * Ends the path without amending a 'Z' and returning the string.
+   *
+   * @returns {string} A path as a string
+   * @memberof Builder
+   */
+  public end(): string {
+    return this.path;
+  }
+
+  /**
    * A private function used to combine previous commands with path string.
    *
    * @private

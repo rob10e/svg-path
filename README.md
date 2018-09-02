@@ -53,6 +53,7 @@ create an instance of the path builder
 - **`arcTo(rx: number, ry: number, xAxisRotation: number, largeArc: boolean, sweep: boolean, x: number, y: number )`** draw arc from current position to point *absolute*
 - **`arcToRel(rx: number, ry: number, xAxisRotation: number, largeArc: boolean, sweep: boolean, x: number, y: number )`** draw arc from current position to point *relative*
 - **`close()`** return the path as an Svg formatted string, closing the path
+- **`end()`** return the path as an Svg formatted string
 
 *Note*:
  I was inpired to write this while building an application requiring a lot of fancy SVG path drawing.

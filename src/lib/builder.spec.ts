@@ -19,6 +19,12 @@ test('moveToRel(10, 10) generates "m 10 10"', t => {
   t.is(path, 'm 10 10 z');
 });
 
+test('end() generates string without "z"', t => {
+  const builder = new Builder();
+  const path = builder.moveTo(10, 10).end();
+  t.is(path, 'M 10 10');
+});
+
 test('moveTo(10, 10).moveToRel(10, 10) generates "M 10 10 m 10 10"', t => {
   const builder = new Builder();
   const path = builder
