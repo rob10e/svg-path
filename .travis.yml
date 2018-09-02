@@ -7,7 +7,6 @@ node_js:
 install:
   - npm ci
 script:
-  - npm test
   - npm run cov
 
   
